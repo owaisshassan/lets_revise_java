@@ -1,12 +1,15 @@
 package com.owaiss.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.owaiss.exception.AdminException;
+import com.owaiss.exception.StudentException;
 import com.owaiss.model.Admin;
+import com.owaiss.model.Student;
 import com.owaiss.repository.AdminRepo;
 
 @Service
@@ -25,5 +28,7 @@ public class AdminServiceImpl implements AdminService{
 			return admin;
 		}
 	}
+
+	
 
 }
