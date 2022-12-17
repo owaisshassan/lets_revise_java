@@ -67,4 +67,23 @@ public class AuthController {
 		return new ResponseEntity<UserResponse>(HttpStatus.ACCEPTED);
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
