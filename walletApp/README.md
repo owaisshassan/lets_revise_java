@@ -68,9 +68,7 @@ After logging in, users can perform various operations like :
 
 ## User and Login DTO request bodies 
 
-https://github.com/owaisshassan/lets_revise_java/blob/main/walletApp/ss/walletApp_requestBodies
-
-
+https://github.com/owaisshassan/lets_revise_java/blob/main/walletApp/ss/walletApp_requestBodies.txt
 
 
    
