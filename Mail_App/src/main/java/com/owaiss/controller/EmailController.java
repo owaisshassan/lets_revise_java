@@ -30,7 +30,7 @@ public class EmailController {
 	}
 	
 	@PostMapping("/starred/{id}")
-	public ResponseEntity<String> sendMailHandler(@PathVariable("id") Integer id) throws EmailException, UserException{
+	public ResponseEntity<String> starMailHandler(@PathVariable("id") Integer id) throws EmailException, UserException{
 		String res= emailServ.starMail(id);
 		
 		return new ResponseEntity<String>(res,HttpStatus.OK);

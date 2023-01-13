@@ -27,7 +27,7 @@ public class GlobalExceptionHandler {
 	
 	
 	@ExceptionHandler(EmailException.class)
-	public ResponseEntity<MyErrorDetails> userExpHandler(EmailException ee, WebRequest req){
+	public ResponseEntity<MyErrorDetails> emailExpHandler(EmailException ee, WebRequest req){
 		
 		MyErrorDetails error=new MyErrorDetails();
 		error.setTimestamp(LocalDateTime.now());
@@ -38,7 +38,7 @@ public class GlobalExceptionHandler {
 	}
 	
 	@ExceptionHandler(LoginException.class)
-	public ResponseEntity<MyErrorDetails> userExpHandler(LoginException le, WebRequest req){
+	public ResponseEntity<MyErrorDetails> loginExpHandler(LoginException le, WebRequest req){
 		
 		MyErrorDetails error=new MyErrorDetails();
 		error.setTimestamp(LocalDateTime.now());
