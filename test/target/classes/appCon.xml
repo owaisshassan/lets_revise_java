@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    
+    <bean id="s1" class="map.Student">
+        <constructor-arg name="roll" value="3" />
+        <constructor-arg name="name" value="Ram"/>
+        <constructor-arg name="marks" value="780"/>
+    </bean>
+ 
+    <bean id="s2" class="map.Student">
+        <constructor-arg name="roll" value="1" />
+        <constructor-arg name="name" value="samu"/>
+        <constructor-arg name="marks" value="900"/>
+    </bean>
+    
+     <bean id="s3" class="map.Student">
+        <constructor-arg name="roll" value="3" />
+        <constructor-arg name="name" value="Ram"/>
+        <constructor-arg name="marks" value="780"/>
+    </bean>
+    
+
+    <bean id="Mapping" class="map.Mapping">
+        <property name="theMap">
+            <map>
+                <entry key-ref="s1" value="NIT"/>
+                <entry key-ref="s2" value="IIT" />
+                <entry key-ref="s3" value="IIT" />
+            </map>
+        </property>
+     </bean>
+    
+</beans>
